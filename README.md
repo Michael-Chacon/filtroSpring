@@ -4,9 +4,9 @@ Me correspondió hacer el CRUD para la entidad Farmacy
 
 ### Rutas: 
 
-GET: api/farmacy
+GET: http://localhost:8080/api/farmacy
 
-POST: api/farmacy
+POST: http://localhost:8080/api/farmacy
 
 ```json
 {
@@ -18,6 +18,6 @@ POST: api/farmacy
 }
 ```
 
-PUT: api/farmacy/1
+PUT: http://localhost:8080/api/farmacy/1
 
-DELETE: api/farmacy/1
+DELETE: http://localhost:8080/api/farmacy/1

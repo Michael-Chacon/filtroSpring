@@ -6,5 +6,7 @@ INSERT INTO region (codereg, namereg, codecountry) VALUES ("car","Caribe", "col"
 
 INSERT INTO city (codecity, namecity, codereg) VALUES ("buc","Bucaramanga", "ad")
 
+INSERT INTO farmacy (namefarmacy, addressfarmacy, longf, latfarmacy, logofarmacy, codecityfarmacy) VALUES ("aaaaaaaaaaaaa", "bla bla ", 1112, 003, "", "buc")
+
 
 
