@@ -2,6 +2,7 @@ package com.examenSpring.domain.service.farmacy;
 
 import com.examenSpring.domain.repository.FarmacyRepository;
 import com.examenSpring.persistence.entity.Farmacy;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,16 +20,19 @@ public class FarmacyServiceImpl implements FarmacyService{
         return (List<Farmacy>) repository.findAll();
     }
 
+    @Transactional
     @Override
     public Optional<Farmacy> findById(Long id) {
         return repository.findById(id);
     }
 
+    @Transactional
     @Override
     public Farmacy save(Farmacy farmacy) {
         return repository.save(farmacy);
     }
 
+    @Transactional
     @Override
     public Optional<Farmacy> update(Long id, Farmacy farmacy) {
         Optional<Farmacy> getFarmacy = repository.findById(id);
@@ -47,6 +51,7 @@ public class FarmacyServiceImpl implements FarmacyService{
         return getFarmacy;
     }
 
+    @Transactional
     @Override
     public Optional<Farmacy> delete(Long id) {
         Optional<Farmacy> getFarmacy = repository.findById(id);
